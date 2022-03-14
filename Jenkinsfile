@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test'){
             steps {
-                sh 'ex3.sh'
+                sh 'sh ex3.sh'
             }
         }
     }
