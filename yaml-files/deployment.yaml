@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-web
+  name: {{  name  }}
 spec:
   selector:
     matchLabels:
@@ -23,7 +23,7 @@ spec:
       volumes:
       - name: nginx-index-file-1
         configMap:
-          name: {{  name  }}
+          name: {{  cmname  }}
           items: 
             - key: data
               path: index.html
